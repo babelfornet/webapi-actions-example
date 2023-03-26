@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Rules>
+	<Rule name="rule1" feature="renaming" exclude="false">
+		<Target>Methods,Properties,Fields,StaticFields</Target>
+		<Pattern>*</Pattern>
+		<HasBase onEnclosingType="true">Microsoft.AspNetCore.Mvc.ControllerBase</HasBase>
+	</Rule>
+	<Rule name="rule2" feature="renaming" exclude="true">
+		<Target>Methods</Target>
+		<Pattern>*</Pattern>
+		<HasAttribute>
+			Microsoft.AspNetCore.Mvc.HttpPostAttribute,
+			Microsoft.AspNetCore.Mvc.HttpPutAttribute,
+			Microsoft.AspNetCore.Mvc.HttpGetAttribute,
+			Microsoft.AspNetCore.Mvc.HttpDeleteAttribute
+		</HasAttribute>
+	</Rule>
+</Rules>
