@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Babel.Obfuscator" Version="10.0.0-pre-230326">
+    <PackageReference Include="Babel.Obfuscator" Version="10.3.0-rc1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <PropertyGroup>
-	<BabelLicense>env:BABEL_LICENSE</BabelLicense>
+	<BabelLicense>floating:BABEL_LICENSE</BabelLicense>
   </PropertyGroup>
 	
 </Project>
