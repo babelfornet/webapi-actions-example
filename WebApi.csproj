@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <PropertyGroup>
-	<BabelLicense>floating:BABEL_LICENSE</BabelLicense>
+	  <BabelLicense>floating:$(BABEL_LICENSE)</BabelLicense>
   </PropertyGroup>
 	
 </Project>
