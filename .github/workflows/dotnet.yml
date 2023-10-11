@@ -21,6 +21,6 @@ jobs:
         env:
           PACKAGES_TOKEN: ${{ secrets.PACKAGES_TOKEN }}        
       - name: Build
-        run: dotnet build --configuration Release --no-restore --verbosity diag
+        run: dotnet build --configuration Release --no-restore
         env:
           BABEL_LICENSE: ${{ secrets.BABEL_LICENSE_SECRET }}
