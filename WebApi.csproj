@@ -1,13 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageReference Include="Babel.Obfuscator" Version="10.4.0-rc1">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -16,8 +16,7 @@
   </ItemGroup>
 
   <PropertyGroup>
-    <BabelEnabled>true</BabelEnabled>
-	  <BabelLicense>floating:KI4EJ-AMBWG-5D555-C2CVN</BabelLicense>
+    <BabelEnabled>true</BabelEnabled>	  
   </PropertyGroup>
 	
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
