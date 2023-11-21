@@ -7,16 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Babel.Obfuscator" Version="10.3.0-rc1">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.3" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Babel.Obfuscator" Version="10.4.0-rc1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 
   <PropertyGroup>
-	  <BabelLicense>floating:$(BABEL_LICENSE)</BabelLicense>
+    <BabelEnabled>true</BabelEnabled>
+	  <BabelLicense>floating:KI4EJ-AMBWG-5D555-C2CVN</BabelLicense>
   </PropertyGroup>
 	
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
 </Project>
