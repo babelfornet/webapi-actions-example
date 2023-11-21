@@ -16,7 +16,8 @@
   </ItemGroup>
 
   <PropertyGroup>
-    <BabelEnabled>true</BabelEnabled>	  
+    <BabelEnabled>true</BabelEnabled>
+	  <BabelLicense>$(BABEL_LICENSE)</BabelLicense>
   </PropertyGroup>
 	
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
