@@ -9,7 +9,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
-    <PackageReference Include="Babel.Obfuscator" Version="10.4.0-rc1">
+    <PackageReference Include="Babel.Obfuscator" Version="10.7.0">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
@@ -17,6 +17,8 @@
 
   <PropertyGroup>
     <BabelEnabled>true</BabelEnabled>
+    <BabelProvideCommandLineArgs>true</BabelProvideCommandLineArgs>
+    <VerboseLevel>3</VerboseLevel>
 	  <BabelLicense>$(BABEL_LICENSE)</BabelLicense>
   </PropertyGroup>
 	
